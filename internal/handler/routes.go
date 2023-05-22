@@ -12,8 +12,8 @@ func (h *Handler) Routes(cfg *config.Config) http.Handler {
 	fileServer := http.FileServer(http.Dir("./ui/static"))
 	mux.Handle("/static/", http.StripPrefix("/static/", fileServer))
 
+	mux.HandleFunc("/forum", h.index)
 	mux.HandleFunc("/", h.index)
-
 	mux.HandleFunc("/user/signup", h.register)
 	mux.HandleFunc("/user/registration", h.registerPost)
 	mux.HandleFunc("/login", h.loginForm)

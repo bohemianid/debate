@@ -1,6 +1,6 @@
 {{ template "base" .}}
 
-{{ define "title"}}Create a New Post{{ end }}
+{{ define "title"}}Жаңа мақала шығару{{ end }}
 
 {{define "body"}}
 <form action='/post/create' method='POST' enctype="multipart/form-data">
@@ -25,7 +25,7 @@
     <div>
         <input type="file" name="image">
         <div>
-            <label>Category:</label>
+            <label>Категория:</label>
                 {{with .Errors.Get "tags"}}
                     <label class="error">{{.}}</label>
                 {{end}}
