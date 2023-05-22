@@ -1,6 +1,6 @@
-INSERT INTO category (name) VALUES ('Technology');
-INSERT INTO category (name) VALUES ('Sports');
-INSERT INTO category (name) VALUES ('Politics');
-INSERT INTO category (name) VALUES ('Science');
-INSERT INTO category (name) VALUES ('Culture');
-INSERT INTO category (name) VALUES ('Other');
+INSERT INTO category (name) VALUES ('Технология');
+INSERT INTO category (name) VALUES ('Спорт');
+INSERT INTO category (name) VALUES ('Политика');
+INSERT INTO category (name) VALUES ('Білім');
+INSERT INTO category (name) VALUES ('Мәдениет');
+INSERT INTO category (name) VALUES ('Аргументация');
